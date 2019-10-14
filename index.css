@@ -1,0 +1,637 @@
+/*///ABREVIATURAS 
+
+Group1:
+.b-background-color
+.c-color de fuente
+.f-tamaño de fuente
+
+Group2:
+-class
+.my-class
+
+Group3:
+r-tronco
+s-rama principal:map
+t-rama principal:chat
+u-rama principal:phone
+v-rama principal:user
+w-rama secundaria:menu
+x-rama secundaria:translate
+y-rama secundaria:book
+z-rama secundaria:hand
+///*/
+
+
+/*///GROUP1///////////////////////////////////////////////////////////*/
+.bBlack01{
+    background-color: rgba(0,0,0,0.1)/*ok*/
+}
+
+.bChange{
+    background-color: blue
+}
+
+.cBlack{
+    color:black
+}
+
+.cWhite09{
+    color: rgba(255,255,255,0.9)
+}
+
+.f50{/*ok*/
+    font-size: 50%/*12px//12-18px//TAMAÑO DE LA FUENTE SECUNDARIA*/ 
+}
+
+
+
+
+
+.bgRed0{
+    background-color: red/*(200,50,100)*/
+}
+
+.bgBlack{
+    background-color: rgba(0,0,0,0.3)
+}
+
+.bgWhite1{
+    background-color: rgb(128,128,128);
+}
+
+.bgWhite2{
+    background-color: rgb(200,200,200)
+}
+
+.coBlack{
+    color: black
+}
+
+
+
+
+
+/*///GROUP2///////////////////////////////////////////////////////////*/
+img{
+    width: 100%/*100%*/
+}
+
+.myButton{
+    border-radius: 28px;/*28px*/
+    box-shadow: 0px 0px 0px 28px rgba(0,0,0,0.3) inset;/*0px 3px 3px rgba(0,0,0,0.7) inset;*/
+    height: 56px;/*56px*/
+    line-height: 56px;/*56px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    top: 2px;/*2px*/
+    width: 56px/*56px*/
+}
+
+.myFontSize{
+    border-radius: 28px;/*28px*/
+    box-shadow: 0px 0px 0px 28px rgba(0,0,0,0.3) inset;/*0px 3px 3px rgba(0,0,0,0.7) inset;*/
+    height: 56px;/*56px*/
+    line-height: 56px;/*56px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    top: 2px;/*2px*/
+    width: 56px/*56px*/
+}
+
+.myHelp{
+    background-color: rgba(0,0,0,0.8);/*background-color: rgba(0,0,0,0.7);*/
+    bottom: 7%;/*20px*/
+    color: white;
+    display: none;
+    font-size: 36px;
+    height: 40px;/*40px-0*/
+    line-height: 40px;      
+    overflow: hidden;/*hidden//...*/   
+    position: fixed;/*absolute*/   
+    right: 0;/*0*/   
+    text-overflow: ellipsis;/*ellipsis//...*/
+    text-shadow: none;
+    white-space: nowrap;/*nowrad//...*/   
+    width: 100%/*100%*/
+}
+
+
+
+/*///GROUP3///////////////////////////////////////////////////////////*/
+#r01Body{    
+    cursor: default;/*default*/
+    font-family: 'Quicksand',"Oswald", serif;/*"Oswald",sans-serif//TIPO DE FUENTE*/
+    font-size: 24px;/*24px//24-36px//TAMAÑO DE LA FUENTE NORMAL*/
+    letter-spacing: 0px;/*1px*/
+    line-height: 120%;/*120%//ESPACIO ENTRE LINEAS*/
+    margin: 0;/*0*/
+    text-align: center/*center*/
+}
+
+#r02All{
+    background-color: black;/*black//yellow//CUADRO ESTATICO PRINCIPAL OCULTO DE PATALLA COMPLETA COMO SOPORTE*/
+    height: 100%;/*100%*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    width: 100%/*100%*/
+}
+
+#r03Window{
+    background-color: white;/**/
+    border-radius: 10px;
+    height: 100%;/*calc(100% - 10px)//100%*/
+    left: 0;/*5px//0*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    top: 0;/*5px//0*/
+    width: 100%/*calc(100% - 10px)//100%*/
+}
+
+#r04Content{
+    height: calc(100% - 45px);/*calc(100% - 45px);//calc(100% - 45px)*/
+    overflow: scroll;/*scroll*/
+    position: absolute;/*absolute*/
+    right: 0;/*0*/
+    top: 45px;/*45px*/
+    width: 100%/*100%*/
+}
+
+#r05Margin{
+    height: 60px;/*0//60px*/
+    width: 100%/*100%*/
+}
+
+#r06Plus{
+    float: left;/*left*/
+    height: 100%;/*100%*/
+    overflow: hidden;/*hidden*/
+    width: 100%/*100%*/
+}
+
+#r07Minus{
+    float: left;/*left*/
+    height: 100%;/*100%*/
+    overflow: hidden;/*hidden*/
+    width: 0%/*0%*/
+}
+
+#s01 {
+    height: 0;/*0//100%*/
+    width: 100%
+}
+
+#t01 {
+    height: auto;/*0//auto*/
+    overflow: hidden;/*hidden*/
+    width: 100%
+}
+
+#u01 {
+    height: 0;/*0//auto*/
+    overflow: hidden;/*hidden*/
+    width: 100%
+}
+
+#v01 {
+    height: 0;/*0//auto*/
+    overflow: hidden;/*hidden*/
+    width: 100%
+}
+
+
+
+
+
+
+
+
+#my04Top{
+    background-color: blue;
+    box-shadow:  0px -5px 20px 30px rgba(0,0,0,0.3) inset;
+    color: rgba(255,255,255,0.9);
+    height: 40px;/*40px*/
+    line-height: 40px;/*35px//40-60px*/
+    position: absolute;/*absolute*/
+    /*overflow: hidden;/*hidden//...MMMMMMMMM*/
+    /*text-shadow: 0px 3px 3px rgba(0,0,0,0.7); /*inset;/*0px 3px 3px rgba(0,0,0,0.7);*/
+    top: 0;/*0*/    
+    width: 100%/*100%*/
+}
+
+#my05A{
+    float: left;/*0*/
+    width: 18%/*100%*/
+}
+
+#my06User{
+    height: 100%;/*40px*/
+    float: left;/*0*/
+    overflow: hidden;/*hidden//...*/ 
+    width: 100%/*20%-0*/
+}
+
+
+
+#my07Circle,#my09CircleOn{
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 0px;
+    overflow: hidden;/**/
+    width: 40px
+}
+
+#my08UserOn{
+    box-shadow: 0px -5px 0px 0px white inset;/*fijo: 0px -3px 1px -1px white inset*/
+    color: white;
+    height: 100%;/*40px*/
+    float: left;/*0*/
+    overflow: hidden;/*hidden//...*/
+    width: 0%/*0-20%*/
+}
+
+#my10B{
+    float: left;/*0*/  
+    width: 35%/*100%*/
+}
+
+#my11Map{
+    /*background-color: blue;/*pink//blue*/
+    height: 100%;/*40px*/
+    float: left;/*0*/
+    overflow: hidden;/*hidden//...*/
+    text-overflow: ellipsis;/*ellipsis//...*/
+    white-space: nowrap;/*nowrad//...*/   
+    width: 100%/*100%*/
+}
+
+#my12MapOn{
+    box-shadow: 0px -5px 0px 0px white inset;/*0px -5px 0px 0px white inset*/
+    color: white;/*white*/
+    height: 100%;/*1005*/
+    float: left;/*left*/
+    overflow: hidden;/*hidden//...*/
+    text-overflow: ellipsis;/*ellipsis//...*/
+    white-space: nowrap;/*nowrad//...*/   
+    width: 0%/*35%*/
+}
+
+#my11{
+    float: left;/*0*/   
+    width: 24%/*100%*/
+}
+
+#my11Chat{
+    height: 100%;/*40px*/
+    float: left;/*0*/
+    /*line-height: 13px;/*31*/
+    overflow: hidden;/*hidden//...*/
+    white-space: nowrap;/*nowrad//...*/   
+    width: 0%/*24%*/
+}
+
+#my12ChatOn{
+    box-shadow: 0px -5px 0px 0px white inset;/*0px -5px 0px 0px white inset*/
+    color: white;/*white*/
+    height: 100%;/*100%*/
+    float: left;/*left*/
+    /*line-height: 13px;/*13px*/
+    overflow: hidden;/*hidden//...*/
+    white-space: nowrap;/*nowrad//...*/   
+    width: 100%/*0%*/
+}
+
+#my13{
+    float: left;/*0*/ 
+    width: 23%/*100%*/
+}
+
+#my13Phone{
+    height: 100%;/*100%*/
+    font-size: 35px;/*35*/
+    float: left;/*left*/
+    line-height: 31px;/*31*/
+    overflow: hidden;/*hidden//...*/
+    white-space: nowrap;/*nowrad//...*/   
+    width: 100%/*23%*/
+}
+
+#my14PhoneOn{
+    box-shadow: 0px -5px 0px 0px white inset;/*0px -5px 0px 0px white inset*/
+    color: white;/*white*/
+    height: 100%;/*100%*/
+    font-size: 35px;/*35px*/
+    float: left;/*left*/
+    line-height: 31px;/*31*/
+    overflow: hidden;/*hidden//...*/
+    white-space: nowrap;/*nowrad//...*/   
+    width: 0%/*100%*/
+}
+
+
+
+
+
+
+#my19More{
+    /*background-color: red;/*chocolate*/
+    border-radius: 28px;/*30px*/
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.7), 0px -5px 20px 30px rgba(0,0,0,0.3) inset;/*0px 3px 3px rgba(0,0,0,0.7) inset;*/
+    height: 56px;/*56px*/
+    line-height: 60px;/*60px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 12px;/*12px*/
+    /*text-shadow: 0px 3px 3px rgba(0,0,0,0.7);/*0px 3px 3px rgba(0,0,0,0.7);*******/
+    top: 47px;/*47px*/
+    width: 56px/*56px*/
+}
+
+
+
+
+
+
+
+
+
+
+#my2Minus{
+    float: left;/*left*/
+    height: 100%;/*100%*/
+    overflow: hidden;/*hidden*/    
+    width: 0%/*0%*/
+}
+
+#my2PLus{
+    float: left;/*left*/
+    height: 100%;/*100%*/
+    overflow: hidden;/*hidden*/
+    width: 100%/*100%*/        
+}
+
+
+
+
+
+
+#myMarginAux{
+    /*background-color: white;*/
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.7);/*0px 3px 3px rgba(0,0,0,0.7);*/
+    height: 60px;/*60px*/
+    line-height: 40px;/*60px*/
+    /*overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 0;/*0*/
+    top: 45px;/*45px*/
+    width: 100%/*100%*/
+}
+
+
+#myE01,#myF01,#myG01{
+    background-color: black;/*black//CUADRO ESTATICO, OCULTO DE PATALLA COMPLETA ABRE DESDE ARRIBA COMO SOPORTE*/
+    height: 0;/*0*/
+    left: 0;/*0*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    top: 0;/*0*/
+    width: 100%/*100%*/
+}
+
+
+#my20Bar{
+    /*background-color: white;/*pink//blue*/
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.7);/*0px 3px 3px rgba(0,0,0,0.7);*/
+    height: 5px;/*5px*/
+    /*overflow: hidden;/*hidden//...*/
+    position: absolute;/*absolute*/
+    right: 0;/*0*/   
+    /*text-overflow: ellipsis;/*ellipsis//...*/
+    top: 40px;/*40px*/
+    /*white-space: nowrap;/*nowrad//...*/   
+    width: 100%/*100%*/
+}
+
+
+
+#r06Plus:hover .myHelp,#r07Minus:hover .myHelp,#my05A:hover .myHelp,#my10B:hover 
+.myHelp,#my11:hover .myHelp,#my13:hover .myHelp,#my19More:hover .myHelp,#my2Plus:hover .myHelp,#my2Minus:hover .myHelp,#myGrey:hover .myHelp,
+.myButton:hover .myHelp,#myMoreX:hover .myHelp, #myFull:hover .myHelp, #myFullOff:hover .myHelp
+{
+    display: block;
+}
+
+
+
+
+#myDarkBlueE,#myDarkBlue,#myDarkBlueG{
+    background-color: DarkBlue;/*DarkBlue*/
+    border-radius: 28px;/*20px*/
+    height: 56px;/*40px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 12px;/*20px*/
+    top: 12px;/*40px*/
+    width: 56px/*40px*/
+}
+
+#myGold{
+    background-color: transparent;/*transparent//gold*/
+    height: 100%;/*calc(100% - 10px)//100%*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 0;/*0*/
+    top: 0;/*0*/
+    width: 0%/*0%*/
+}
+
+#myGreen{
+    background-color: greenyellow;/*greenyellow*/
+    height: 100%;/*calc(100% - 10px)//100%*/
+    left: 0;/*5px//0*/
+    overflow: scroll;/*scroll*/
+    position: absolute;/*absolute*/
+    top: 0;/*5px//0*/
+    width: 100%/*calc(100% - 10px)//100%*/      
+}
+
+#myGrey{
+    background-color: rgba(0,0,0,0.5);/*transparent//rgba(0,0,0,0.5)//FONDO TRANSLUCIDO ORCURO*/
+    height: 100%;/*calc(100% - 10px)//100%*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 0;/*5px//0*/
+    top: 0;/*5px//0*/
+    width: 100%/*calc(100% - 10px)//100%*/
+}
+
+#myLeaf2{
+    height: calc(100% - 105px);/*calc(100% - 105px);*/
+    overflow: scroll;/*scroll*/
+    position: absolute;/*absolute*/
+    right: 0;/*0*/
+    text-align: left;/*left*/
+    top: 105px;/*105px*/
+    width: 100%/*100%*/
+}
+
+
+
+#myMenu{
+    background-color: white;/*red//CUADRO ESTATICO ANGOSTO LATERAL, OCULTO ABRE DESDE LA DERECHA*/
+    border-radius: 10px;
+    box-shadow: -2px 0px 1px rgba(0,0,0,0.7);/*0px 3px 3px rgba(0,0,0,0.7);*/
+    height: 100%;/*100%*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 0;/*0*/
+    top: 0;/*0*/
+    width: 320px/*355px////////////////////////////////AJUSTE ANCHO MENU LATERAL*/
+}
+
+
+
+#myMoreX{
+    /*background-color: chocolate;/*chocolate*/
+    border-radius: 28px;/*30px*/
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.7), 0px -5px 20px 30px rgba(0,0,0,0.3) inset;/*0px 3px 3px rgba(0,0,0,0.7) inset;*/
+    height: 56px;/*56px*/
+    line-height: 60px;/*60px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 12px;/*12px*/
+    top: 2px;/*2px*/
+    width: 56px/*56px*/
+}
+
+#myFull{
+    border-radius: 8px;/*26px*/
+    box-shadow: 0px -5px 20px 30px rgba(0,0,0,0.3) inset;/*0px 3px 3px rgba(0,0,0,0.7) inset;*/
+    color: white;
+    height: 40px;/*52px*/
+    /*line-height: 45px;/*60px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 20px;/*44px*/
+    top: -41px;/*-43px*/
+    width: 40px/*52px*/
+}
+
+#myFullOff{
+    border-radius: 8px;/*26px*/
+    box-shadow: 0px -5px 20px 30px rgba(0,0,0,0.3) inset;/*0px 3px 3px rgba(0,0,0,0.7) inset;*/
+    color: white;
+    height: 40px;/*52px*/
+    /*line-height: 45px;/*60px*/
+    overflow: hidden;/*hidden*/
+    position: absolute;/*absolute*/
+    right: 20px;/*44px*/
+    top: -41px;/*43px*/
+    width: 0/*52px*/
+}
+
+#myTop2{
+    /*background-color: white;/*pink//blue*/
+    height: 40px;/*40px*/
+    line-height: 40px;
+    left: 0;/*0*/
+    overflow: hidden;/*hidden//...*/
+    position: absolute;/*absolute*/
+    text-overflow: ellipsis;/*ellipsis//...*/
+    top: 0;/*0*/
+    white-space: nowrap;/*nowrad//...*/   
+    width:80%/*100%*/
+}
+
+
+
+
+
+/*///ESTILOS CON .CLASS////////////////////////////////////////////////////////*/
+
+
+
+.myFont{
+    font-size: 70%;/*12px//12-18px//TAMAÑO DE LA FUENTE SECUNDARIA*/ 
+    line-height: 100%;/*24*/
+}
+
+.fontG{
+    color:rgb(128,128,128)
+}
+
+
+
+
+
+
+
+
+.cont1 {
+    overflow: hidden;
+    padding: 0px;/*borde de cada pestaña*/
+    background-color:#fff;
+    display: block;
+    float: none;
+    height:auto;
+    /*width: 90%;*/
+}
+
+.cont2 {
+    overflow: hidden;
+    width: 261px;
+    height:40px;
+    background-color: #fff;
+    display: block;
+    float: none;
+}
+
+.traductor {/*ajuste encabezados de noticias*/
+    height: 25px;
+    /*overflow: hidden;*/
+    padding-top: 8px;
+    background-color: #fff;
+    display:inline-block;
+    float: left;
+    width: 147px;
+}
+
+.logogt {/*ajuste encabezados de noticias*/
+    /*height: 40px;
+    /*overflow: hidden;*/
+    display:inline-block;
+    float: left;
+    width: 114px;
+    background-color: #fff;
+}
+
+.goog-logo-link {
+    background-color:#0FF;
+    /*display:none;*/
+}
+
+.goog-te-banner-frame skiptranslate {
+    display:none;
+}
+
+/*.goog-te-banner {
+display:none;
+}*/
+
+/*ocultar barra superior del traductor*/
+.skiptranslate {
+    display:none;
+}
+
+.goog-te-gadget {/*ajuste boton traductor*/
+    display:inline;
+}
+
+hr {/*ajuste 1er barra de un boton*/
+    border: 1px solid #777;
+    margin-bottom: 2.1px;
+}
+
+.traductordis {/*ajuste encabezados de noticias*/
+    display:none;
+}
+
